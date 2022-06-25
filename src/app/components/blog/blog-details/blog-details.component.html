@@ -1,0 +1,24 @@
+<!-- <app-navbar></app-navbar> -->
+<ng-container *ngIf="thisBlog;
+else spinner">
+  <div class="blog-details">
+    <div class="blog-details__container">
+      <div class="blog-details__header">
+        <p class="blog-details__title">{{thisBlog?.title}}</p>
+        <div class="blog-details__info">
+          <img src={{thisBlog?.authorImg2}}>
+          <p>{{thisBlog?.authorName}}</p>
+          <p>|</p>
+          <p>{{thisBlog?.date}}</p>
+        </div>
+      </div>
+
+      <img class="blog-details__img" src={{thisBlog?.blogImg}} alt={{thisBlog?.title}}>
+      <p [innerHTML]=thisBlog?.body class="blog-details__body"></p>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #spinner>
+  <app-spinner></app-spinner>
+</ng-template>

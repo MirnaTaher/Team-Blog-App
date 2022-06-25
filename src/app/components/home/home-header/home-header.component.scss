@@ -1,0 +1,57 @@
+.header {
+  background-image: url(../../../../assets/header-bg.jpg);
+  background-size: cover;
+  height: 960px;
+
+  &__form {
+    width: 40%;
+    padding: 10rem 0 15rem;
+  }
+
+  &__heading {
+    font-size: 55px;
+    font-weight: 400;
+    color: white;
+  }
+
+  &__body {
+    color: white;
+    font-size: 20px;
+  }
+
+  .btn {
+    background-color: #0bbef2;
+    color: white;
+  }
+
+  .btn,
+  .form-control {
+    padding: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 1210px) {
+  .header {
+    &__form {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    &__form {
+      width: 65%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__form {
+      width: 100%;
+    }
+  }
+}

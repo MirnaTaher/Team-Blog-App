@@ -1,0 +1,38 @@
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  color: #324162;
+
+  span {
+    color: #0bbef2;
+  }
+
+  &:hover {
+    color: #324162;
+  }
+}
+
+
+.navbar-collapse {
+  flex-direction: row-reverse;
+
+  .navbar-nav {
+    gap: 15px;
+
+    .nav-link {
+      color: #324162;
+      font-weight: 500;
+    }
+
+    .btn {
+      background-color: rgba(11, 188, 242, 0.15);
+      color: #0bbcf2;
+      width: fit-content;
+    }
+
+    .nav-link,
+    .btn {
+      font-size: 14px;
+    }
+  }
+}

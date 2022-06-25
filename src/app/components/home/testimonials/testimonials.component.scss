@@ -1,0 +1,59 @@
+.testimonials {
+  padding: 10rem 0;
+
+  .container {
+    margin-right: 0;
+  }
+
+  &__heading {
+    font-size: 55px;
+    color: #324162;
+    padding-bottom: 5rem;
+    font-weight: 400;
+  }
+
+  &__carousel {
+    // position: relative;
+    left: 218px;
+  }
+
+}
+
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: 0;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px)and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1999px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400) {
+  .container {
+    max-width: 1320px;
+  }
+}

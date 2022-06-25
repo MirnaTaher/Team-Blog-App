@@ -1,0 +1,32 @@
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  span {
+    color: #0bbef2;
+  }
+  &:hover {
+    color: white;
+  }
+}
+.bg-light {
+  background-color: transparent !important;
+}
+.navbar-collapse {
+  flex-direction: row-reverse;
+  .navbar-nav {
+    gap: 15px;
+    .nav-link {
+      color: white;
+      font-weight: 500;
+    }
+    .btn {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+    .nav-link,
+    .btn {
+      font-size: 14px;
+    }
+  }
+}

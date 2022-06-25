@@ -1,0 +1,12 @@
+<div class="testimonials">
+  <div class="container">
+    <h3 class="testimonials__heading">What people say about Team</h3>
+    <owl-carousel-o [options]="customOptions" class="testimonials__carousel">
+      <ng-template carouselSlide *ngFor="let person of people">
+        <app-testimonials-card [testimonial]="person"></app-testimonials-card>
+      </ng-template>
+
+    </owl-carousel-o>
+  </div>
+
+</div>

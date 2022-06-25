@@ -1,0 +1,10 @@
+<ng-container *ngIf="currentRoute != '/'">
+    <!-- <app-navbar [ngStyle]="{'background-color':currentRoute === '/blog' ? '#E5E5E5' : 'transparent' }">
+    </app-navbar> -->
+    <app-navbar [ngClass]="{'blog__navbar': currentRoute === '/blog'}"></app-navbar>
+</ng-container>
+
+<router-outlet>
+</router-outlet>
+
+<app-footer></app-footer>
