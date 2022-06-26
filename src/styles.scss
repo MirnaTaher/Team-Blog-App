@@ -40,6 +40,24 @@ body {
   }
 }
 
+.pagination-next,
+.pagination-previous {
+  display: none !important;
+}
+
+.ngx-pagination {
+  li {
+    color: #697694;
+    width: 45px;
+    padding: 10px 0 !important;
+
+    &.current {
+      background-color: #69769420;
+      color: #697694;
+    }
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .owl-next {
     margin-right: 308px !important;
