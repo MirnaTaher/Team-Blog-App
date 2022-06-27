@@ -1,6 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-// @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
-// @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+// global styles
 html,
 body {
   height: 100%;
@@ -14,6 +12,40 @@ body {
 
 .btn {
   width: fit-content;
+}
+
+.container-left {
+  margin-left: auto;
+  max-width: 90%;
+}
+
+.container {
+  margin: auto;
+  max-width: 80%;
+  padding: 0;
+}
+
+.more {
+  color: #0bbef2;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+
+  .arrow {
+    transition: ease-in-out;
+  }
+
+  &:hover {
+    .arrow {
+      padding-left: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .container-left {
+    // max-width: ;
+  }
 }
 
 // owl carousel styles
@@ -31,7 +63,7 @@ body {
 }
 
 .owl-stage {
-  left: -70px;
+  left: -80px;
 }
 
 .blog__navbar {
@@ -39,6 +71,8 @@ body {
     background-color: #f5f7fa;
   }
 }
+
+// pagination
 
 .pagination-next,
 .pagination-previous {
@@ -49,11 +83,23 @@ body {
   li {
     color: #697694;
     width: 45px;
-    padding: 10px 0 !important;
+    height: 45px;
+    padding-top: 8px;
+    margin: 0 5px;
+    border-radius: 5px !important;
+
+    &.current,
+    &:hover {
+      background-color: rgba(105, 118, 148, 0.1);
+      color: #697694;
+
+      a {
+        background-color: transparent;
+      }
+    }
 
     &.current {
-      background-color: #69769420;
-      color: #697694;
+      padding-top: 11px;
     }
   }
 }

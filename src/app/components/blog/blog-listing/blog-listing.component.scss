@@ -14,62 +14,6 @@
     color: #697694;
     margin-bottom: 60px;
   }
-
-  &__card {
-    border-radius: 5px;
-    padding: 0;
-    height: 500px;
-    position: relative;
-    margin-bottom: 30px;
-    background-color: white;
-    cursor: pointer;
-
-    .blog__img {
-      width: 100%;
-    }
-
-    &__content {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    &__title {
-      font-size: 22px;
-      color: #324162;
-      margin: 1.3rem 0;
-      line-height: 30.8px;
-    }
-
-    &__body {
-      font-size: 15px;
-      color: #697694;
-      max-height: 70px;
-      overflow: hidden;
-    }
-
-    &:hover {
-      box-shadow: 0px 0px 20px rgba(66, 66, 66, 0.302);
-    }
-  }
-
-  &__info {
-    color: #697694;
-    font-size: 12px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    position: absolute;
-    bottom: 20px;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    img {
-      width: auto;
-      height: auto;
-    }
-  }
 }
 
 .spinner {

@@ -18,7 +18,11 @@ import { HomeNavbarComponent } from './components/common/home-navbar/home-navbar
 import { TestimonialsComponent } from './components/home/testimonials/testimonials.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TestimonialsCardComponent } from './components/home/testimonials/testimonials-card/testimonials-card.component';
-import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
+import { NgxPaginationModule } from 'ngx-pagination';
+import { BlogCardComponent } from './components/blog/blog-listing/blog-card/blog-card.component';
+import { HubSectionComponent } from './components/home/hub-section/hub-section.component';
+import { TaskMangageSysComponent } from './components/home/task-mangage-sys/task-mangage-sys.component';
+import { SchedulingComponent } from './components/home/scheduling/scheduling.component'; // <-- import the module
 
 
 @NgModule({
@@ -35,6 +39,10 @@ import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
     HomeNavbarComponent,
     TestimonialsComponent,
     TestimonialsCardComponent,
+    BlogCardComponent,
+    HubSectionComponent,
+    TaskMangageSysComponent,
+    SchedulingComponent,
   ],
   imports: [
     BrowserModule,
