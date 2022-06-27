@@ -86,11 +86,23 @@
 }
 
 
+
 @media screen and (max-width: 576px) {
   footer {
     .container {
       justify-content: center;
       align-items: center;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .row {
+    &>* {
+      padding: 0 !important;
     }
   }
 }

@@ -14,7 +14,6 @@ export class TestimonialsComponent implements OnInit {
     pullDrag: true,
     dots: false,
     navSpeed: 700,
-    stagePadding: 70,
     navText: [
       '<img src="../../../../assets/left.png">',
       '<img src="../../../../assets/right.png">',
@@ -22,9 +21,13 @@ export class TestimonialsComponent implements OnInit {
     responsive: {
       0: {
         items: 1,
+        stagePadding: 0,
       },
       700: {
         items: 2,
+      },
+      800: {
+        stagePadding: 70,
       },
       1000: {
         items: 3,

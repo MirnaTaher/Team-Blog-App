@@ -62,9 +62,7 @@ body {
   text-align: end;
 }
 
-.owl-stage {
-  left: -80px;
-}
+
 
 .blog__navbar {
   nav {
@@ -104,8 +102,30 @@ body {
   }
 }
 
+@media screen and (min-width:800px) {
+  .owl-stage {
+    left: -80px;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .owl-next {
-    margin-right: 308px !important;
+    margin-right: 8.2rem !important;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .owl-next {
+    margin-right: 6.8rem !important;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .owl-next {
+    margin-right: 4.5rem !important;
   }
 }
