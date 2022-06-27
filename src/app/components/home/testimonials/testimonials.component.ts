@@ -31,6 +31,7 @@ export class TestimonialsComponent implements OnInit {
       },
       1000: {
         items: 3,
+        stagePadding: 70,
       }
     },
     nav: true,

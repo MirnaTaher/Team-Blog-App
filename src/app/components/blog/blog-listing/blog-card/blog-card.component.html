@@ -2,7 +2,7 @@
   <img class="blog__img" src={{blog.blogImg}}>
   <div class="blog__card__content">
     <h3 class="blog__card__title">{{blog.title}}</h3>
-    <p class="blog__card__body">{{blog.body}}</p>
+    <p class="blog__card__body" [innerHTML]=blog?.body></p>
     <div class="blog__info">
       <img src={{blog.authorImg1}}>
       <p>{{blog.authorName}}</p>
