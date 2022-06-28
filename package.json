@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "fetching blog data from api and displaying them in clickable cards",
   "engines": {
-    "node": "6.11.1"
+    "node": "16.15.1"
   },
   "scripts": {
     "ng": "ng",
