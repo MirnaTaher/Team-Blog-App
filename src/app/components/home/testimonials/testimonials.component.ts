@@ -14,6 +14,8 @@ export class TestimonialsComponent implements OnInit {
     pullDrag: true,
     dots: false,
     navSpeed: 700,
+    autoplay: true,
+    autoplayHoverPause: true,
     navText: [
       '<img src="../../../../assets/left.png">',
       '<img src="../../../../assets/right.png">',
@@ -23,13 +25,15 @@ export class TestimonialsComponent implements OnInit {
         items: 1,
         stagePadding: 0,
       },
-      700: {
+      560: {
         items: 2,
+        stagePadding: 0,
       },
-      800: {
+      720: {
+        items: 2,
         stagePadding: 70,
       },
-      1000: {
+      1080: {
         items: 3,
         stagePadding: 70,
       }

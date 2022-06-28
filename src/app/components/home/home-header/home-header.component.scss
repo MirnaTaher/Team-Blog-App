@@ -9,7 +9,7 @@
   }
 
   &__heading {
-    font-size: 55px;
+    font-size: 3.4375rem;
     font-weight: 400;
     color: white;
   }
@@ -29,8 +29,6 @@
     padding: 10px;
   }
 }
-
-
 
 @media screen and (max-width: 1210px) {
   .header {
@@ -52,6 +50,21 @@
   .header {
     &__form {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .header {
+    &__form {
+      &>div.row {
+        align-items: center;
+        flex-direction: column;
+
+        input[type='text'] {
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 }
