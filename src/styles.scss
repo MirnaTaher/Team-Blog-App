@@ -56,7 +56,7 @@ body {
 }
 
 .owl-next {
-  margin-right: 209px !important;
+  margin-right: 10.2rem !important;
 }
 
 .owl-theme .owl-nav {
@@ -128,5 +128,21 @@ body {
 
   .owl-next {
     margin-right: 4.5rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 13px;
+  }
+
+  .container-left,
+  .container {
+    margin: auto;
+    width: 80%;
+  }
+
+  .owl-next {
+    margin-right: -0.5rem !important;
   }
 }

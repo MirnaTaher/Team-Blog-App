@@ -14,3 +14,15 @@
         margin-bottom: 2rem;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        justify-content: center !important;
+    }
+
+    .more {
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+}

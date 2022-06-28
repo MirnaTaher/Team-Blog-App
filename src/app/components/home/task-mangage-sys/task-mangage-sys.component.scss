@@ -14,3 +14,13 @@
         margin-bottom: 2rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .row {
+        justify-content: center !important;
+    }
+
+    .management__img {
+        margin-bottom: 2rem;
+    }
+}

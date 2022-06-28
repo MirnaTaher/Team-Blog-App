@@ -45,3 +45,36 @@
     line-height: 26px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .blog-details {
+
+    &__container {
+      width: 80%;
+    }
+
+    &__header,
+    &__body {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width:576px) {
+
+  .blog-details {
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__header,
+    &__body {
+      width: 100%;
+    }
+
+    &__info {
+      gap: 5px;
+    }
+  }
+
+}
