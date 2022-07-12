@@ -23,7 +23,8 @@ import { BlogCardComponent } from './components/blog/blog-listing/blog-card/blog
 import { HubSectionComponent } from './components/home/hub-section/hub-section.component';
 import { TaskMangageSysComponent } from './components/home/task-mangage-sys/task-mangage-sys.component';
 import { SchedulingComponent } from './components/home/scheduling/scheduling.component';
-import { environment } from '../environments/environment'; // <-- import the module
+import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from '@angular/service-worker'; // <-- import the module
 
 
 @NgModule({
@@ -53,6 +54,12 @@ import { environment } from '../environments/environment'; // <-- import the mod
     HttpClientModule,
     CarouselModule,
     NgxPaginationModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
