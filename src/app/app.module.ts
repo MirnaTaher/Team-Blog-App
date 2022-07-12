@@ -22,7 +22,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { BlogCardComponent } from './components/blog/blog-listing/blog-card/blog-card.component';
 import { HubSectionComponent } from './components/home/hub-section/hub-section.component';
 import { TaskMangageSysComponent } from './components/home/task-mangage-sys/task-mangage-sys.component';
-import { SchedulingComponent } from './components/home/scheduling/scheduling.component'; // <-- import the module
+import { SchedulingComponent } from './components/home/scheduling/scheduling.component';
+import { environment } from '../environments/environment'; // <-- import the module
 
 
 @NgModule({
@@ -51,7 +52,7 @@ import { SchedulingComponent } from './components/home/scheduling/scheduling.com
     MatIconModule,
     HttpClientModule,
     CarouselModule,
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
